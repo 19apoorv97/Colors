@@ -197,31 +197,27 @@ body {
           justify-content: space-between;
 }
 
-.main_section .models .model {
-  /*&_img-blur{
-                position: absolute;
-                top: 1rem;
-                left: 0;
-                width: 90%;
-                height: 40vh;
-                border-radius: 1rem;
-                margin: 2rem 0;
-                filter: blur(1rem);
-                z-index: 5;
-            }*/
-}
-
 .main_section .models .model_img {
-  /*position: absolute;
-                top: 0;
-                left: 0;*/
   width: 90%;
   height: 40vh;
   border-radius: 1rem;
   margin: 2rem 0;
-  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.315);
-          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.315);
   z-index: 10;
+}
+
+.main_section .models .model_img-1 {
+  -webkit-box-shadow: 0 0.8rem 1rem rgba(65, 105, 225, 0.3);
+          box-shadow: 0 0.8rem 1rem rgba(65, 105, 225, 0.3);
+}
+
+.main_section .models .model_img-2 {
+  -webkit-box-shadow: 0 0.8rem 1rem rgba(255, 0, 0, 0.3);
+          box-shadow: 0 0.8rem 1rem rgba(255, 0, 0, 0.3);
+}
+
+.main_section .models .model_img-3 {
+  -webkit-box-shadow: 0 0.8rem 1rem rgba(0, 255, 255, 0.3);
+          box-shadow: 0 0.8rem 1rem rgba(0, 255, 255, 0.3);
 }
 
 .main_section .calender {
@@ -331,8 +327,8 @@ body {
 
 .side_section .cards .credit_card {
   border-radius: 0.5rem;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.315);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.315);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(255, 166, 0, 0.3);
+          box-shadow: 0 0.5rem 1rem rgba(255, 166, 0, 0.3);
   position: absolute;
   top: 0;
   width: 90%;
