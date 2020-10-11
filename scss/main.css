@@ -110,6 +110,11 @@ body {
   color: orange;
 }
 
+.navigation_section .navigation_exit_link {
+  margin-top: 3rem;
+  width: 2rem;
+}
+
 .navigation_section .navigation_exit_link:link, .navigation_section .navigation_exit_link:visited {
   text-decoration: none;
   color: black;
@@ -128,7 +133,6 @@ body {
 }
 
 .navigation_section .navigation_icon-exit {
-  margin-top: 20vh;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -214,6 +218,28 @@ body {
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.315);
           box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.315);
   z-index: 10;
+}
+
+.main_section .calender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_section .calender .date {
+  border-radius: 2rem;
+}
+
+.main_section .calender .date > * {
+  margin: 1rem;
+}
+
+.main_section .calender .date:hover {
+  background-color: orange;
+  color: #fff;
 }
 
 /*.header{
