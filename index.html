@@ -8,14 +8,100 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <div class="navigation_section">
             <h1 class="heading-1">C<span style="color: orange;">o</span>lors</h1>
+            <nav class="navigation">
+                <ul class="navigation_list">
+                    <li class="navigation_item">
+                        <a href="#" class="navigation_link">
+                            <svg class="navigation_icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>    
+                            </svg>
+                            <p class="navigation_text">Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="#" class="navigation_link">
+                            <svg class="navigation_icon">
+                                <use xlink:href="img/sprite.svg#icon-envelop"></use>    
+                            </svg>
+                            <p class="navigation_text">Messages</p>
+                        </a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="#" class="navigation_link">
+                            <svg class="navigation_icon">
+                                <use xlink:href="img/chat.svg#icon-bubble"></use>    
+                            </svg>
+                            <p class="navigation_text">Chats</p>
+                        </a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="#" class="navigation_link">
+                            <svg class="navigation_icon">
+                                <use xlink:href="img/sprite.svg#icon-user"></use>    
+                            </svg>
+                            <p class="navigation_text">Profile</p>
+                        </a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="#" class="navigation_link">
+                            <svg class="navigation_icon">
+                                <use xlink:href="img/sprite.svg#icon-cloud-upload"></use>    
+                            </svg>
+                            <p class="navigation_text">Upload</p>
+                        </a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="#" class="navigation_link">
+                            <svg class="navigation_icon">
+                                <use xlink:href="img/sprite.svg#icon-cog"></use>    
+                            </svg>
+                            <p class="navigation_text">Settings</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="navigation_exit_link">
+                <svg class="navigation_icon navigation_icon-exit">
+                    <use xlink:href="img/sprite.svg#icon-logout"></use>    
+                </svg>
+            </a>
+        </div>
+        <main class="main_section">
             <div class="search">
                 <input type="text" class="search_bar" placeholder="Search for statics..">
                 <svg class="search_icon">
                     <use xlink:href="img/sprite.svg#icon-search"></use>
                 </svg>    
             </div>
+            <h2 class="heading-2">Stories</h2>
+            <p><span class="category">Recomended</span><span class="category">New Trends</span><span class="category">Mul. Colors</span></p>
+            <section class="models">
+                <div class="model">
+                    <img src="./img/blue.jpg" alt="blue" class="model_img">
+                    <!--<img src="./img/blue.jpg" alt="blue" class="model_img-blur">-->
+                    <h4 class="model_name">Niketa William</h4>
+                    <p class="category">Paris</p>
+                </div>
+                <div class="model">
+                    <img src="./img/pink.jpg" alt="pink" class="model_img">
+                    <!--<img src="./img/pink.jpg" alt="pink" class="model_img-blur">-->
+                    <h4 class="model_name">Trisha Louis</h4>
+                    <p class="category">London</p>
+                </div>
+                <div class="model">
+                        <img src="./img/cyan.jpg" alt="cyan" class="model_img">
+                        <!--<img src="./img/cyan.jpg" alt="cyan" class="model_img-blur">-->
+                        <h4 class="model_name">Anna Tomas</h4>
+                        <p class="category">USA</p>
+                </div>
+            </section>
+            <h2 class="heading-2">Event Dates</h2>
+        </main>
+        <!--
+        <div class="header">
+            
             <div class="profile">
             <svg class="notification_icon">
                 <use xlink:href="img/sprite.svg#icon-notifications_none"></use>
@@ -24,63 +110,7 @@
             </div>
             
         </div>
-        <nav class="navigation">
-            <ul class="navigation_list">
-                <li class="navigation_item">
-                    <a href="#" class="navigation_link">
-                        <svg class="navigation_icon">
-                            <use xlink:href="img/sprite.svg#icon-home"></use>    
-                        </svg>
-                        <p class="navigation_text">Dashboard</p>
-                    </a>
-                </li>
-                <li class="navigation_item">
-                    <a href="#" class="navigation_link">
-                        <svg class="navigation_icon">
-                            <use xlink:href="img/sprite.svg#icon-envelop"></use>    
-                        </svg>
-                        <p class="navigation_text">Messages</p>
-                    </a>
-                </li>
-                <li class="navigation_item">
-                    <a href="#" class="navigation_link">
-                        <svg class="navigation_icon">
-                            <use xlink:href="img/chat.svg#icon-bubble"></use>    
-                        </svg>
-                        <p class="navigation_text">Chats</p>
-                    </a>
-                </li>
-                <li class="navigation_item">
-                    <a href="#" class="navigation_link">
-                        <svg class="navigation_icon">
-                            <use xlink:href="img/sprite.svg#icon-user"></use>    
-                        </svg>
-                        <p class="navigation_text">Profile</p>
-                    </a>
-                </li>
-                <li class="navigation_item">
-                    <a href="#" class="navigation_link">
-                        <svg class="navigation_icon">
-                            <use xlink:href="img/sprite.svg#icon-cloud-upload"></use>    
-                        </svg>
-                        <p class="navigation_text">Upload</p>
-                    </a>
-                </li>
-                <li class="navigation_item">
-                    <a href="#" class="navigation_link">
-                        <svg class="navigation_icon">
-                            <use xlink:href="img/sprite.svg#icon-cog"></use>    
-                        </svg>
-                        <p class="navigation_text">Settings</p>
-                    </a>
-                </li>
-            </ul>
-            <a href="#" class="navigation_exit_link">
-                <svg class="navigation_icon navigation_icon-exit">
-                    <use xlink:href="img/sprite.svg#icon-logout"></use>    
-                </svg>
-            </a>
-        </nav>
+        -->
     </div>
 </body>
 </html>
