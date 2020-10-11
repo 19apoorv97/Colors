@@ -2,10 +2,11 @@
     padding: 2rem;
     background-color: #fefefe;
     width: 100%;
-    height: 125vh;
+    height: 48rem;
     border-radius: 1rem;
     display: grid;
-    grid-template-columns: 15vw 1fr 25vw;
+    grid-template-columns: 13vw 1fr 23vw;
+    grid-column-gap: 2rem;
 }
 .navigation_section{
     grid-column: 1/2;
@@ -34,15 +35,16 @@
                 top: 0;
                 left: 0;
                 width: 3px;
-                height: 130%;
+                height: 150%;
                 background-color: #F4EAE1;
                 border-top-right-radius: 1rem;
                 border-bottom-right-radius: 1rem;
+                transform: translateY(-10%);
                 transition: all .1s;
             }
             &:hover::before{
                 opacity: 1;
-                width: 35%;
+                width: 37%;
             }
         }
         &_link{
@@ -86,7 +88,7 @@
 .main_section{
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: repeat(2,3rem) min-content minmax(5rem,1fr) 3rem repeat(2,5rem);//7rows
+    grid-template-rows: repeat(2,3rem) min-content minmax(5rem,1fr) 3rem 5rem 6rem;//7rows
 
     .search{
         grid-row: 1/2;
@@ -106,11 +108,6 @@
         padding: 1rem 1.5rem;
     }
         
-    }
-    .category{
-        font-size: 0.7rem;
-        font-weight: 400;
-        margin-right: 2rem;
     }
     .models{
         display: grid;
@@ -157,30 +154,89 @@
             }
         }
     }
-}
-/*.header{
-    //background-color: rgb(255, 241, 116);
-    grid-row: 1/2;
-    grid-column: 1/-1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-
-    
-    .notification_icon
-    {
-        width: 1.5rem;
-        height: 1.5rem;
-    }    
-    .profile{
-        justify-self: end;
-        &_photo{
-            width: 2rem;
-            height: 2rem;
-            border-radius: 50%;
-            margin-left: 1rem;
-            margin-top: 5px;
+    .events{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        .tile{
+            border: 1.5px solid rgba(0, 0, 0, 0.5);
+            border-radius: 1rem;
+            width: 47%;
+            padding: 0.8rem;
+            display: grid;
+            grid-template-rows: 1rem 1fr;
+            grid-template-columns: 1fr 4fr;
+            grid-column-gap: 0.5rem;
+            grid-row-gap: 0.5rem;
+            transition: all .2s;
+            &:hover
+            {
+                transform: translateY(-0.5rem);
+            }
+            &_icon{
+                grid-row: 1/-1;
+                grid-column: 1/2;
+                height: 2rem;
+                width: 3rem;
+            }
+            p{
+                grid-row: 2/3;
+                grid-column: 2/3;
+                font-size: 10px;
+            }
         }
     }
-}*/
+    
+}
+.side_section
+    {
+        grid-column: 3/4;
+        display: grid;
+        grid-template-rows: 2rem 3rem min-content minmax(5rem,1.3fr) 3rem min-content minmax(3rem,0.7fr) 3rem min-content minmax(3rem,1fr) min-content;//11
+        .profile{
+            justify-self: end;
+            &_photo{
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                margin-left: 1rem;
+            }
+            .notification_icon
+            {
+            width: 1.5rem;
+            height: 1.5rem;
+            }   
+        }
+        .cards{
+            position: relative;
+            .credit_card{
+                border-radius: 0.5rem;
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.315);
+                position: absolute;
+                top: 0;
+                width:90%;
+                &-1{
+                    left: 2rem;
+                }
+                &-2{
+                    left: 0;
+                }
+            }
+        }
+        .graph_details{
+            display: flex;
+            justify-content: space-between;
+        }
+        .percentage{
+            justify-self: center;
+            font-weight: 700;
+            font-size: 6rem;
+            &_text{
+                justify-self: center;
+                align-self: center;
+                color: rgba(255, 166, 0, 0.8);
+                font-size: 0.8rem;
+            }
+        }
+        
+    }
