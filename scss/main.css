@@ -184,6 +184,7 @@ body {
   border-radius: 1rem;
   border-style: none;
   padding: 1rem 1.5rem;
+  outline-style: none;
 }
 
 .main_section .models {
