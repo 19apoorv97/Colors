@@ -69,16 +69,6 @@
                 color: orange;
             }
         }
-        &_icon{
-            fill: currentColor;
-            float: left;
-            height: 1.5rem;
-            width: 1.5rem;
-            margin-right: 1rem;
-            &-exit{
-                transform: rotateY(180deg);
-            }
-        }
         &_text{
             padding-top: 0.3rem;
             font-size: 12px;
@@ -188,12 +178,49 @@
         display: grid;
         grid-template-rows: 2rem 3rem min-content minmax(5rem,1.3fr) 3rem min-content minmax(3rem,0.7fr) 3rem min-content minmax(3rem,1fr) min-content;//11
         .profile{
+            position: relative;
             justify-self: end;
             &_photo{
+                position: relative;
                 width: 2rem;
                 height: 2rem;
                 border-radius: 50%;
                 margin-left: 1rem;
+                z-index: 110;
+            }
+            #profile_checkbox{
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: none;
+            }
+            .profile_background{
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-image: radial-gradient(
+                    #f4eae1,
+                    hsl(28, 91%, 79%)
+                );
+                padding: 1rem;
+                border-radius: 0.5rem;
+                width: 20vw;
+                height: 70vh;
+                z-index: 100;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                visibility: hidden;
+            }
+            #profile_checkbox:checked ~ .profile_background{
+                opacity: 1;
+                visibility: visible;
+            }
+            .profile_list{
+                list-style: none;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
             }
             .notification_icon
             {
@@ -210,7 +237,7 @@
                 width:90%;
                 &-1{
                     box-shadow: 0 0.5rem 1rem rgba(128, 0, 128, 0.3);
-                    left: 2rem;
+                    left: 1.5rem;
                     top: 0;
                 }
                 &-2{

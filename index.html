@@ -155,18 +155,53 @@
         </main>
         <div class="side_section">
             <div class="profile">
-                <!--<input type="checkbox" id="notification_checkbox">-->
-                <label for="notification_checkbox">
-                    <svg class="notification_icon">
-                        <use xlink:href="img/sprite.svg#icon-notifications_none"></use>
-                    </svg>
+                <svg class="notification_icon">
+                    <use xlink:href="img/sprite.svg#icon-notifications_none"></use>
+                </svg>
+                <input type="checkbox" id="profile_checkbox">
+                <label for="profile_checkbox">
+                    <img src="./img/profile.png" alt="profile" class="profile_photo">   
                 </label>
-                <!--<div class="notification_background">
-                    <p>Nikita William posted a new post</p>
-                    <hr>
-                    <p>Anna Tomas liked your comment</p>
-                </div>-->
-                <img src="./img/profile.png" alt="profile" class="profile_photo">
+                <div class="profile_background">
+                    <ul class="profile_list">
+                        <li>
+                            <svg class="navigation_icon">
+                                <use xlink:href="img/sprite.svg#icon-user"></use>    
+                            </svg>
+                            <span>Profile</span>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg class="navigation_icon">
+                                <use xlink:href="img/sprite.svg#icon-envelop"></use>    
+                            </svg>
+                            <span>Messages</span>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg class="navigation_icon">
+                                <use xlink:href="img/sprite.svg#icon-cog"></use>    
+                            </svg>
+                            <span>Settings</span>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg class="navigation_icon">
+                                <use xlink:href="img/sprite.svg#icon-cloud-upload"></use>    
+                            </svg>
+                            <span>Upload</span>
+                            <hr>
+                        </li>
+                        <li>
+                            <svg class="navigation_icon navigation_icon-exit">
+                                <use xlink:href="img/sprite.svg#icon-logout"></use>    
+                            </svg>
+                            <span>Log out</span>
+                            <hr>
+                        </li>
+                        
+                    </ul>
+                </div>
             </div>
             <h2>Transactions</h2>
             <p class="category">Payments by cards</p>

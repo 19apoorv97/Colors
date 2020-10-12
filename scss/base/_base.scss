@@ -21,3 +21,13 @@ body{
     //margin-top: 2rem;
     margin-bottom: 2rem;
 }
+.navigation_icon{
+    fill: currentColor;
+    float: left;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 1rem;
+    &-exit{
+        transform: rotateY(180deg);
+    }
+}
