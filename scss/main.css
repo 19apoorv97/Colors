@@ -318,6 +318,7 @@ body {
 }
 
 .side_section .profile .notification_icon {
+  cursor: pointer;
   width: 1.5rem;
   height: 1.5rem;
 }
